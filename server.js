@@ -8,4 +8,4 @@ var server = http.createServer(function(req, res){
     res.end();
 });
 console.log('Node is running at port: ' + portNumber);
-server.listen(portNumber);
+server.listen(process.env.PORT || portNumber);
