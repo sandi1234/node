@@ -1,5 +1,6 @@
 // http
 var http = require('http');
+res.setHeader('Access-Control-Allow-Origin', '*');
 var portNumber = 8000;
 
 var server = http.createServer(function(req, res){
